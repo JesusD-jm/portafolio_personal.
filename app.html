@@ -1,0 +1,294 @@
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/40 backdrop-blur-xl shadow-[0_0_40px_rgba(192,193,255,0.06)] transition-colors duration-500">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<span class="text-xl font-bold tracking-tighter text-slate-100 font-headline">Jesús Jaimes</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-manrope tracking-tight text-sm font-medium text-cyan-400 font-bold border-b-2 border-cyan-400 pb-1" href="#inicio">Inicio</a>
+<a class="font-manrope tracking-tight text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors" href="#sobre-mi">Sobre mí</a>
+<a class="font-manrope tracking-tight text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors" href="#habilidades">Habilidades</a>
+<a class="font-manrope tracking-tight text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors" href="#proyectos">Proyectos</a>
+<a class="font-manrope tracking-tight text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors" href="#contacto">Contacto</a>
+</div>
+<!-- Menú móvil -->
+<div class="md:hidden">
+<button (click)="toggleMenu()" class="text-slate-100 focus:outline-none">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div [class.hidden]="!isMenuOpen()" class="absolute top-full left-0 w-full bg-slate-950/90 backdrop-blur-xl shadow-lg">
+<div class="flex flex-col items-center py-4 space-y-4">
+<a (click)="toggleMenu()" class="font-manrope tracking-tight text-sm font-medium text-cyan-400" href="#inicio">Inicio</a>
+<a (click)="toggleMenu()" class="font-manrope tracking-tight text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors" href="#sobre-mi">Sobre mí</a>
+<a (click)="toggleMenu()" class="font-manrope tracking-tight text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors" href="#habilidades">Habilidades</a>
+<a (click)="toggleMenu()" class="font-manrope tracking-tight text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors" href="#proyectos">Proyectos</a>
+<a (click)="toggleMenu()" class="font-manrope tracking-tight text-sm font-medium text-slate-400 hover:text-slate-100 transition-colors" href="#contacto">Contacto</a>
+</div>
+</div>
+</div>
+<button class="bg-primary-container text-primary font-label px-6 py-2 rounded-md text-sm font-medium hover:text-cyan-300 transition-all duration-300 scale-95 active:scale-90 text-blue-300" type="button">
+                Descargar CV
+            </button>
+</div>
+</nav>
+<main class="bg-gray-900"> // Fondo oscuro para toda la página
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="inicio">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/4 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-tertiary/10 rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+<div class="lg:col-span-8">
+<span class="font-label text-white tracking-[0.3em] uppercase mb-6 block">Desarrollador de Software</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8 text-blue-900">
+                        Jesús David Jaimes Meriño: Transformando Ideas en Código
+                    </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl mb-10 text-gray-400">
+                        Estudiante del SENA de 18 años, apasionado por la construcción de arquitecturas digitales modernas y soluciones eficientes que impactan el mundo real.
+                    </p>
+<div class="flex flex-wrap gap-6">
+<a class="px-8 py-4 bg-primary-container text-white font-label rounded-md flex items-center gap-2 hover:bg-tertiary transition-colors duration-300" href="#contacto">
+                            CONTACTAR AHORA
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="px-8 py-4 text-white font-label border-b-2 border-transparent hover:border-tertiary transition-all duration-300" href="#proyectos">
+                            VER PROYECTOS
+                        </a>
+</div>
+</div>
+<div class="lg:col-span-4 relative hidden lg:block">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden glass-panel p-2">
+<img src="Jesus.png" alt="Jesus David Jaimes Meriño" class="w-full h-full object-cover"/>
+</div>
+<div class="absolute -bottom-6 -left-6 glass-panel p-6 rounded-xl border border-outline-variant/20">
+<span class="font-headline text-4xl font-extrabold text-white block">18</span>
+<span class="font-label text-xs tracking-widest text-white uppercase">Años de Visión</span>
+</div>
+</div>
+</div>
+</section>
+<!-- About Me Section -->
+<section class="py-32 bg-surface-container-low" id="sobre-mi">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="absolute -top-10 -left-10 text-[12rem] font-headline font-extrabold text-white/5 select-none pointer-events-none">01</div>
+<div class="glass-panel p-10 rounded-2xl border border-outline-variant/10 relative z-10">
+<h2 class="font-headline text-4xl font-bold mb-8 text-white">Arquitecto de Experiencias</h2>
+<div class="space-y-6 text-gray-300 font-body leading-relaxed">
+<p>
+                                    Mi camino en la tecnología comenzó con una curiosidad insaciable por entender cómo funcionan las cosas detrás de la pantalla. Actualmente, como estudiante de desarrollo de software en el <span class="text-tertiary font-medium">SENA</span>, he transformado esa curiosidad en una disciplina técnica rigurosa.
+                                </p>
+<p>
+                                    Me especializo en crear interfaces que no solo sean visualmente atractivas, sino funcionalmente superiores. Mi enfoque se centra en el aprendizaje continuo y la adaptabilidad ante los cambios constantes del ecosistema tech.
+                                </p>
+<p>
+                                    Mi visión es clara: democratizar la tecnología a través de código limpio, escalable y con un sentido humano profundo.
+                                </p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-8">
+<div class="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+<img alt="Tech setup" class="w-full h-full object-cover" data-alt="Close up of high-end developer workspace with mechanical keyboard, multiple monitors displaying code snippets in dark theme, and soft blue ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC75tmH978dFHce0gHmte81fC4kY_-i4MHsHy7w9-QtLvsmaoAJlPZKTdfBkwjpvacTbPNsLLA8wmwVh-O0K78UWD7wnCek5P5FYe1aBiM1BY1S0H_DgBrQ9bdRjSbmDKGT68V-blgxAqYHxH77qJl5MrqVtkSU5yyyhf1F02KIV0VZ7BAmi0ZOUAeGXs7fVY_W-l6Ou4yicioe6aJOTqdAABmzfxyG8BSmMS6Ppwhv-SFsRqHsDNSZrJH-iQR-xIYJuuR-cwdzLiI"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-6 bg-surface-container-high rounded-xl">
+<span class="material-symbols-outlined text-gray-400 mb-4" style="font-variation-settings: 'FILL' 1;">school</span>
+<h4 class="font-headline font-bold text-white">Formación SENA</h4>
+<p class="text-xs text-gray-400 mt-2 font-label">Técnico en Programación</p>
+</div>
+<div class="p-6 bg-surface-container-high rounded-xl">
+<span class="material-symbols-outlined text-gray-400 mb-4" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<h4 class="font-headline font-bold text-white">Visión 2024</h4>
+<p class="text-xs text-gray-400 mt-2 font-label">Fullstack Path</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sección de habilidades -->
+<section class="py-32" id="habilidades">
+<div class="max-w-7xl mx-auto px-8 text-center mb-20">
+<span class="font-label text-tertiary tracking-[0.4em] uppercase mb-4 block text-white">Stack Tecnológico</span>
+<h2 class="font-headline text-5xl font-extrabold tracking-tighter text-white">Herramientas de Construcción</h2>
+</div>
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+<!-- Herramientas de construcción -->
+<div class="group p-8 bg-surface-container text-center rounded-xl border border-transparent hover:border-tertiary/30 hover:bg-surface-container-high transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-gray-400">javascript</span>
+<p class="font-label text-sm uppercase tracking-widest text-gray-400 group-hover:text-white">JavaScript</p>
+</div>
+<div class="group p-8 bg-surface-container text-center rounded-xl border border-transparent hover:border-tertiary/30 hover:bg-surface-container-high transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-gray-400">terminal</span>
+<p class="font-label text-sm uppercase tracking-widest text-gray-400 group-hover:text-white">Python</p>
+</div>
+<div class="group p-8 bg-surface-container text-center rounded-xl border border-transparent hover:border-tertiary/30 hover:bg-surface-container-high transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-gray-400">deployed_code</span>
+<p class="font-label text-sm uppercase tracking-widest text-gray-400 group-hover:text-white ">React</p>
+</div>
+<div class="group p-8 bg-surface-container text-center rounded-xl border border-transparent hover:border-tertiary/30 hover:bg-surface-container-high transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-gray-400">database</span>
+<p class="font-label text-sm uppercase tracking-widest text-gray-400 group-hover:text-white">SQL</p>
+</div>
+<div class="group p-8 bg-surface-container text-center rounded-xl border border-transparent hover:border-tertiary/30 hover:bg-surface-container-high transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-gray-400">css</span>
+<p class="font-label text-sm uppercase tracking-widest text-gray-400 group-hover:text-white">Tailwind</p>
+</div>
+<div class="group p-8 bg-surface-container text-center rounded-xl border border-transparent hover:border-tertiary/30 hover:bg-surface-container-high transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-gray-400">hub</span>
+<p class="font-label text-sm uppercase tracking-widest text-gray-400 group-hover:text-white">Git</p>
+</div>
+</div>
+</section>
+<!-- Sección de proyectos -->
+<section class="py-32 bg-surface-container-lowest relative overflow-hidden" id="proyectos">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<span class="font-label text-white">Portafolio</span>
+<h2 class="font-headline text-5xl font-extrabold tracking-tighter text-white">Exploraciones Digitales</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="group bg-surface-container-high rounded-2xl overflow-hidden border border-outline-variant/5 hover:border-tertiary/20 transition-all duration-500 flex flex-col">
+<div class="aspect-video overflow-hidden p-4">
+<img src="/tajeta1.jpg" alt="tarjeta de proyecto 1" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-700"/>
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-tertiary rounded-full uppercase tracking-tighter text-white  ">React</span>
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-tertiary rounded-full uppercase tracking-tighter text-white">Node.js</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3 group-hover:text-tertiary transition-colors text-white">Desarrollo Full Stack</h3>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6 text-gray-400">
+                          Desarrollo aplicaciones web completas utilizando React para interfaces dinámicas y Node.js para la construcción de APIs eficientes, enfocadas en rendimiento, escalabilidad y experiencia de usuario.                            </p>
+<div class="mt-auto">
+<a class="text-tertiary font-label text-xs tracking-widest uppercase flex items-center gap-2 group/link text-white" href="#">
+                                    Ver Detalles
+                                    <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group bg-surface-container-high rounded-2xl overflow-hidden border border-outline-variant/5 hover:border-tertiary/20 transition-all duration-500 flex flex-col">
+<div class="aspect-video overflow-hidden">
+<img src="/tarjeta2.jpg" alt="tarjeta de proyecto 2" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-700"/>
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-tertiary rounded-full uppercase tracking-tighter text-white  ">Python</span>
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-tertiary rounded-full uppercase tracking-tighter text-white">FastAPI</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3 group-hover:text-tertiary transition-colors text-white">Desarrollo Backend</h3>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6 text-gray-400">
+                                Implemento soluciones backend robustas con Python y Java, diseñadas para automatizar procesos, gestionar grandes volúmenes de datos y garantizar estabilidad en entornos empresariales.
+                            </p>
+<div class="mt-auto">
+<a class="text-tertiary font-label text-xs tracking-widest uppercase flex items-center gap-2 group/link text-white" href="#">
+                                    Ver Detalles
+                                    <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group bg-surface-container-high rounded-2xl overflow-hidden border border-outline-variant/5 hover:border-tertiary/20 transition-all duration-500 flex flex-col">
+<div class="aspect-video overflow-hidden">
+<img src="/tarjeta3.jpg" alt="tarjeta de proyecto 3" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-700"/>
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-tertiary rounded-full uppercase tracking-tighter text-white  ">Flutter</span>
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-tertiary rounded-full uppercase tracking-tighter text-white">React Native</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3 group-hover:text-tertiary transition-colors text-white">Desarrollo de Aplicaciones Móviles Multiplataforma</h3>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6 text-gray-400">
+                                Desarrollo aplicaciones móviles modernas con Flutter y React Native especialmente, enfocadas en rendimiento, diseño intuitivo y sincronización en tiempo real para una experiencia de usuario óptima.
+                            </p>
+<div class="mt-auto">
+<a class="text-tertiary font-label text-xs tracking-widest uppercase flex items-center gap-2 group/link text-white" href="#">
+                                    Ver Detalles
+                                    <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sección de contacto -->
+<section class="py-32 relative" id="contacto">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<span class="font-label text-tertiary tracking-[0.4em] uppercase mb-4 block text-white">Hablemos</span>
+<h2 class="font-headline text-5xl font-extrabold tracking-tighter mb-8 text-white">¿Tienes un Proyecto en Mente?</h2>
+<p class="text-on-surface-variant text-lg mb-12 max-w-md font-body text-gray-400">
+                            Estoy abierto a nuevas oportunidades de colaboración, proyectos freelance o simplemente para charlar sobre tecnología.
+                        </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4 text-on-surface hover:text-tertiary transition-colors group cursor-pointer">
+<div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center group-hover:bg-tertiary/20 transition-all">
+<span class="material-symbols-outlined text-gray-400">mail</span>
+</div>
+<span class="font-label tracking-wide text-white">contacto@jesudavid.dev</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface hover:text-tertiary transition-colors group cursor-pointer">
+<div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center group-hover:bg-tertiary/20 transition-all">
+<span class="material-symbols-outlined text-gray-400">location_on</span>
+</div>
+<span class="font-label tracking-wide text-white">Barranquilla, Colombia</span>
+</div>
+</div>
+<div class="flex gap-6 mt-12">
+<a class="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-full text-on-surface-variant hover:border-tertiary hover:text-tertiary transition-all" href="#">
+<span class="material-symbols-outlined text-gray-400">link</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-full text-on-surface-variant hover:border-tertiary hover:text-tertiary transition-all" href="#">
+<span class="material-symbols-outlined text-gray-400">code</span>
+</a>
+</div>
+</div>
+<div class="glass-panel p-10 rounded-2xl border border-outline-variant/10">
+<form class="space-y-8">
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b-2 border-outline-variant py-4 px-0 focus:ring-0 focus:border-tertiary text-on-surface placeholder-transparent transition-all" placeholder=" " type="text"/>
+<label class="absolute left-0 top-4 text-on-surface-variant font-label text-sm uppercase tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-tertiary text-white">Nombre Completo</label>
+</div>
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b-2 border-outline-variant py-4 px-0 focus:ring-0 focus:border-tertiary text-on-surface placeholder-transparent transition-all" placeholder=" " type="email"/>
+<label class="absolute left-0 top-4 text-on-surface-variant font-label text-sm uppercase tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-tertiary text-white">Correo Electrónico</label>
+</div>
+<div class="relative">
+<textarea class="peer w-full bg-transparent border-0 border-b-2 border-outline-variant py-4 px-0 focus:ring-0 focus:border-tertiary text-on-surface placeholder-transparent transition-all" placeholder=" " rows="4"></textarea>
+<label class="absolute left-0 top-4 text-on-surface-variant font-label text-sm uppercase tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-tertiary text-white">Tu Mensaje</label>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container py-5 rounded-md font-label uppercase tracking-[0.2em] font-bold hover:bg-tertiary transition-all duration-300 text-white" type="submit">
+                                Enviar Mensaje
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Pie de página -->
+<footer class="bg-slate-950 w-full py-12 border-t border-slate-900/50">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-6">
+<span class="text-slate-100 font-black font-headline">Jesús David Jaimes Meriño</span>
+<p class="font-space-grotesk text-xs tracking-widest uppercase text-slate-500 text-center md:text-left">
+                © 2024 Jesús David Jaimes Meriño. Diseñado bajo la estética Digital Obsidian.
+            </p>
+<div class="flex gap-8">
+<a class="font-space-grotesk text-xs tracking-widest uppercase text-slate-500 hover:text-cyan-400 underline-offset-4 hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="font-space-grotesk text-xs tracking-widest uppercase text-slate-500 hover:text-cyan-400 underline-offset-4 hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="font-space-grotesk text-xs tracking-widest uppercase text-slate-500 hover:text-cyan-400 underline-offset-4 hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+
+
+<router-outlet />
